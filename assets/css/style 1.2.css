@@ -1,0 +1,245 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Section_top {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-image: url("../../assets/Img/img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 10s infinite ease-in-out;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 15%;
+    transform: translateY(-50%);
+    width: 100%;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 6em;
+    font-weight: 600;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+}
+
+h1 span {
+    color: rgb(236, 26, 156);
+    text-shadow: 0 0 5px #ff005b;
+    display: inline-block;
+    font-weight: 1000;
+    font-size: 110px;
+    animation: animate 2.5s linear infinite;
+    opacity: 0;
+}
+
+#fontcolor {
+    color: rgb(204, 236, 26);
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0px);
+    }
+}
+
+h1 span:nth-child(1) {
+    animation-delay: 1s;
+}
+
+h1 span:nth-child(2) {
+    animation-delay: 2s;
+}
+
+h1 span:nth-child(3) {
+    animation-delay: 2.5s;
+}
+
+h1 span:nth-child(4) {
+    animation-delay: 3s;
+}
+
+h1 span:nth-child(5) {
+    animation-delay: 3.5s;
+}
+
+h1 span:nth-child(6) {
+    animation-delay: 4s;
+}
+
+h1 span:nth-child(7) {
+    animation-delay: 4.5s;
+}
+
+h1 span:nth-child(8) {
+    animation-delay: 5s;
+}
+
+h1 span:nth-child(9) {
+    animation-delay: 5.5s;
+}
+
+/* bubble  img*/
+.bubble img {
+    width: 5%;
+    background-color: #ff005b;
+    border-radius: 50%;
+    border: 5px solid #0051ff;
+    animation: bubble 5s linear infinite;
+}
+
+.bubble {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 80px;
+}
+
+/* bubble 1 img*/
+.bubble1 img {
+    width: 5%;
+    background-color: #51ff00;
+    border-radius: 50%;
+    border: 5px solid #ffff00;
+    animation: bubble1 5s linear infinite;
+}
+.bubble1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+}
+
+/* bubble 2 img*/
+
+/* bubble key frame*/
+
+@keyframes bubble {
+    0% {
+        transform: translatex(0vh);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-50vh);
+        opacity: 0;
+    }
+}
+
+/* background images key frame*/
+
+@keyframes change {
+    0% {
+        background-image:  url("../../assets/Img/img7.jpg");
+    }
+    20% {
+        background-image: url("../../assets/Img/img.jpg");
+    }
+    40% {
+        background-image: url("../../assets/Img/img1.jpg");
+    }
+    60% {
+        background-image: url("../../assets/Img/img6.jpg");
+    }
+    80% {
+        background-image: url("../../assets/Img/img5.jpg");
+    }
+    100% {
+        background-image: url("../../assets/Img/img3.jpg");
+    }
+    120% {
+        background-image: url("../../assets/Img/img2.jpg");
+    }
+    150% {
+        background-image:url("../../assets/Img/img8.jpg");
+    }
+}
+
+/* bubble1 key frame*/
+
+@keyframes bubble1 {
+    0% {
+        transform: translatey(-50vh);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        transform: translatex(0vh);
+        opacity: 0;
+    }
+}
+
+/* bubble  time deleation*/
+
+.bubble img:nth-child(1) {
+    animation-delay: 2s;
+}
+
+.bubble img:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.bubble img:nth-child(3) {
+    animation-delay: 5s;
+}
+
+.bubble img:nth-child(4) {
+    animation-delay: 7s;
+}
+
+/* bubble1  time deleation*/
+
+.bubble1 img:nth-child(1) {
+    animation-delay: 6.1s;
+}
+
+.bubble1 img:nth-child(2) {
+    animation-delay: 3.1s;
+}
+
+.bubble1 img:nth-child(3) {
+    animation-delay: 1.5s;
+}
+
+.bubble1 img:nth-child(4) {
+    animation-delay: 9s;
+}
+        

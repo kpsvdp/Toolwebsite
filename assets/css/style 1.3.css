@@ -1,0 +1,61 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url("../../assets/Img/hnw24.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner {
+    height: 100vh;
+}
+
+.banner:before {
+    content: '';
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../../assets/Img/paperfall.png");
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 550px;
+    }
+}
+.bubble img{
+    width: 50%;
+    animation: bubble 30s linear infinite;
+}
+.bubble{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70;
+}
+@keyframes bubble{
+    0%{
+        transform: translateY(30vh);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    } 
+    70%{
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(50vh);
+        opacity: 0;
+    }
+}

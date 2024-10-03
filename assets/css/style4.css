@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*/* Universal settings applied to all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Default font */
+}
+
+/* Headings styles */
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif; /* Robust and modern font for headings */
+    font-weight: bold; /* Makes headings bold */
+    color: #000000; /* Dark grey color for text */
+}
+
+/* Paragraph styles */
+p {
+    font-family: 'Georgia', serif; /* A classic serif font for body text */
+    font-size: 16px; /* Standard size for readability */
+    color: #666; /* Lighter grey for less emphasis */
+    line-height: 1.6; /* Enhanced line spacing for readability */
+}
+
+/* Emphasis for important text */
+strong {
+    font-family: 'Arial', sans-serif; /* Sans-serif for contrast in emphasis */
+    font-weight: bold; /* Bold for emphasis */
+    color: #000; /* Black for strong emphasis */
+}
+
+/* Styling for links */
+a {
+    font-family: 'Verdana', sans-serif; /* Clear and simple sans-serif font */
+    color: blue; /* Standard link color */
+    text-decoration: none; /* Removes underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Adds underline on hover for links */
+}
+
+
+body {
+    width: 100%;
+    height: 100vh; /* Ensures the body takes at least the full height of the viewport */
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+    background-image: url("../../assets/Img/Todolist.jpg");
+    background-color: rgb(59, 147, 147);
+    background-position: center center; /* Centers the background image */
+    background-size: cover; /* Ensures the image covers the entire area, may crop some parts of the image */
+    background-repeat: no-repeat; /* Prevents repeating the background image */
+    background-attachment: scroll; /* The background scrolls along with the element's contents */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.input-container {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+}
+
+.input-container input {
+    border: none;
+    outline: none;
+    padding: 12px;
+    margin-block: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.input-container input[type="text"] {
+    width: 70%;
+}
+
+.input-container input[type="button"] {
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: 700;
+    margin-left: 8px;
+    cursor: pointer;
+    padding: 12px 24px;
+}
+
+.input-container input[type="button"]:hover {
+    background-color: #0a110a;
+}
+
+ul {
+    width: 70%;
+    max-width: 450px;
+}
+
+ul li {
+    list-style-type: none;
+    cursor: pointer;
+    margin-block-end: 12px;
+    border-radius: 8px;
+    border: 0.125px solid #a19f9f;
+    padding: 6px 12px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.5s;
+}
+
+ul li:hover {
+    background-color: #ffffff;
+}
+
+ul li p {
+    flex-grow: 1;
+    padding: 2px;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: none;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.deleteBtn {
+    color: #ff0000;
+}
+
+.editBtn {
+    color: #008000;
+}
