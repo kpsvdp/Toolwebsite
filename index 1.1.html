@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="assets/Images/ganesha.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganesh</title>
+    <link rel="stylesheet" type="text/css" href="assets/CSS/style 1.1.css">
+    <link href="https://fonts.googleapis.com/css?family=Protest Guerrilla" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Video -->
+    <video autoplay muted loop id="background-video">
+        <source src="assets/Img/Ganesh02.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Content -->
+    <div class="centerimg">
+        <img src="assets/Img/Ganesh01.png" width="600px" alt="Ganesh Image">
+        <h2>
+            Vakratunda Mahakaya Surya Koti Samaprabha |<br>
+            Nirvighnam Kuru Me Deva Sarva-Kaaryeshu Sarvadaa ||<br>
+            "Happy Ganesh Chaturthi"
+        </h2>
+        <!-- Play Button to start the audio -->
+        <button id="playAudio">Play Music</button>
+    </div>
+
+    <!-- Background Audio -->
+    <audio id="background-audio" loop>
+        <source src="Music/Shree-Vakratunda-Mahakaya-Suresh-Wadkar.mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <!-- Debugging info -->
+    <script>
+        const playButton = document.getElementById('playAudio');
+        const audio = document.getElementById('background-audio');
+
+        // Play the audio when the user clicks the button
+        playButton.addEventListener('click', () => {
+            audio.play();
+            playButton.style.display = 'none'; // Hide the play button after playing audio
+        });
+
+        // Log audio events
+        audio.addEventListener('play', () => console.log('Audio is playing'));
+        audio.addEventListener('error', (e) => console.log('Error playing audio:', e));
+    </script>
+</body>
+</html>
